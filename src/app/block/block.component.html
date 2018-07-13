@@ -1,0 +1,11 @@
+<div class="block" [ngClass]="{check: checkComponent}">
+  <div class="title">
+    {{name}}: {{value}}
+    <button (click)="increment()">+</button>
+    <button (click)="child()">child</button>
+    : <app-child [chlValue]="childValue"></app-child>
+  </div>
+  <div class="content">
+    <ng-content></ng-content>
+  </div>
+</div>
